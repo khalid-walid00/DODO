@@ -244,6 +244,21 @@ color: white !important
 
 @media (min-width:411px) and (max-width:767px)
 {  
+    
+    .imgfirst{
+        width: 72% !important;
+    }
+    #lastcardfirst{
+        top: 92px;
+    }
+    .cardfirstcard{
+        width: 392px !important;
+        top: 236px !important;
+    }
+    .dodofirst{
+        left: 20px !important;
+        
+    }
     #firstmargin{
         position: relative;
         top: 20%;
@@ -278,12 +293,21 @@ color: white !important
         position: relative;
         top: 79px;
     }
+
     .cardsecondcard{
         top: 366px !important;
         width: 393px !important;
     }
+    .play3{
+        top: 92px !important;
+        width: 364px !important;
+    }
+    .dodo3{
+        left: 2% !important;
+    }
     .cardthird{
         top: 332px !important;
+        width: 388px !important;
     }
     .cathome{
         display: none;
