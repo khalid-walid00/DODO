@@ -655,6 +655,14 @@ transform: rotate(180deg);
 }
 @media  (min-width:1023px) and (max-width:4000px)
 {
+
+    .cardsecond{
+        position: absolute;
+        top:95px;
+        height: max-content;
+        left: 64px;
+        width: 30%;
+    }
     #cardss{
         position: absolute !important;
         top: -7% !important;
