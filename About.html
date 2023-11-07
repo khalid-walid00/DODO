@@ -168,7 +168,7 @@ Community
 </div>
 </div>
 </div>
-<div class="bg-orange rounded-bottom-3 shadow-sm fs-2 fst-italic p-3 dodo3 pb-1 position-relative" style="width: max-content;left: 44%;top: -48px;">DoDo Games</div>
+<div class="bg-orange rounded-bottom-3 shadow-sm fs-2 fst-italic p-3 dodoabout pb-1 position-relative" style="width: max-content;left: 44%;top: -48px;">DoDo Games</div>
 
   <div class="p-5 pt-0 ms-lg-5">
     <div class="row pt-5 pb-1 justify-content-center mt-lg-5 nofont fs-2 text-primary-emphasis">An Immersive Gaming Experience</div>
@@ -214,7 +214,8 @@ Community
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
-    <script>
+    <script> 
+    $(".first-about").fadeIn(2000)
        $(window).on("scroll",()=>{
         $(".bigcard1").animate({
            left:"10px"
@@ -229,7 +230,7 @@ Community
            left:"10px"
         },1000)
        
-             $(".first-about ").fadeIn(2000)
+            
              if (scrollY>=700) {
                     
                     $(".card-about").fadeIn(2000).delay(1000)
