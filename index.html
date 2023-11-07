@@ -257,7 +257,9 @@
     <hr class="my-lg-5 ">
     <div class="row justify-content-center nofont  blockquote-footer">© 2023 by Tripo. Powered and secured by khalid_walid to dodo</div>
 </div>
-    <div id="up" class="position-fixed rounded-circle  bg-orange p-2" style="bottom: 20px;z-index: 999999999999999999999999999;right: 50px;"><i class="fa-solid fa-fade fa-share fs-1 fa-rotate-270"></i></div>
+    <div id="up" class="position-fixed rounded-circle  bg-orange p-2 " style="top: 63%;z-index: 9999999999999;right: 15px;"><i class="fa-solid fa-fade fa-share fs-1 fa-rotate-270"></i>
+    
+    </div>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -342,7 +344,7 @@
          } 
          ////////////////////////////////
          $(window).on("scroll",()=>{
-            console.log($(window).scrollTop())
+          
                 if(scrollY>=500)
                 {
                          $(".Source,.about").fadeIn(1000)
@@ -395,7 +397,7 @@
                 } }
 
 
-                if($(window).width()>415){
+                if($(window).width()>767){
                     console.log("first")
                 if($(window).scrollTop()>590)
                 {
@@ -405,7 +407,7 @@
                     $("#up").slideUp(800)
                 }}
 
-                if($(window).width()<414){
+                if($(window).width()>400&&$(window).width()<767){
                     console.log("second")
                 if($(window).scrollTop()>100)
                 {
