@@ -79,9 +79,8 @@
 </div>
 </div>
 
-
 <div id="firstmargin">
-<div class="row  text-center about hidden nofont fs-5 text-primary-emphasis">About Tripo</div>
+<div class="row  text-center  hidden nofont fs-5 text-primary-emphasis">About Tripo</div>
 <div class="row  text-center Source hidden fs-2 fw-bold my-4 text-primary-emphasis">Your Source for Mobile Entertainment</div>
 <div class="row  text-center p hidden"><p class=" nofont text-center  text-primary-emphasis fs-5">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
 <div class="row  text-center btnn hidden"><a href="#" class="btn rounded-3 fs-5 px-3 bg-orange nofont " style="width: max-content;">Learn More</a></div>
@@ -118,8 +117,6 @@
         </div>
         </div>
       </div>
-
-      
       <div class="col text-center">
         <div class="card card1 p-5 shadow-lg rounded-3" >
         <div class="row">
@@ -135,15 +132,11 @@
             </div>
         <div class="row mt-3">
             <div class="col-5"><img src="img/Apple Store.png" alt=""  class="w-100"></div>
-            <div class="col-5"><img src="img/Google Play.png" alt=""  class="w-100"></div>
-           
+            <div class="col-5"><img src="img/Google Play.png" alt=""  class="w-100"></div> 
         </div>
         </div>
       </div>
-
     </div>
-
-
     <div class="row position-absolute justify-content-around card2" id="fourpadge">
         <div class="col-lg col-md-12 text-center">
         <div class="card card1 p-5 shadow-lg rounded-3" >
@@ -165,53 +158,13 @@
         </div>
         </div>
       </div>
-
-      
       <div class="col-lg col-md-12 text-center mt-4">
-      <img src="img/dap2.png" class="w-100 dep2">
+      <img src="img/dap2.png" class="w-50 dep2">
       </div>
     </div>
 </div>
-
-
-
-
-
-
-
-    
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="c" >
-
-
-
 <div id="ten" class="hidden"> 
      <div class="container px-5" id="tnentext">
     <div class="row  text-light" style="margin-top: 50px;">Join Our Team</div>
@@ -302,7 +255,7 @@
     <hr class="my-lg-5 ">
     <div class="row justify-content-center nofont  blockquote-footer">© 2023 by Tripo. Powered and secured by khalid_walid to dodo</div>
 </div>
-    <div id="up" class="position-fixed rounded-circle hidden bg-orange p-2" style="bottom: 20px;z-index: 9999999999999;right: 20px;"><i class="fa-solid fa-fade fa-share fs-1 fa-rotate-270"></i></div>
+    <div id="up" class="position-fixed rounded-circle  bg-orange p-2" style="bottom: 20px;z-index: 999999999999999999999999999;right: 50px;"><i class="fa-solid fa-fade fa-share fs-1 fa-rotate-270"></i></div>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -438,13 +391,27 @@
                   
                   $(".dab3").fadeIn(2000)
                 } }
+
+
+                if($(window).width()>415){
+                    console.log("first")
                 if($(window).scrollTop()>590)
                 {
                   
                   $("#up").show(1000)
                 }else{
                     $("#up").slideUp(800)
-                }
+                }}
+
+                if($(window).width()<414){
+                    console.log("second")
+                if($(window).scrollTop()>100)
+                {
+                  
+                  $("#up").show(1000)
+                }else{
+                    $("#up").slideUp(800)
+                }}
 ////////////////////////////////////////////////////////////////////////
                 if($(window).width()<449){
                 if($(window).scrollTop()>4400)

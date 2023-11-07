@@ -33,6 +33,12 @@ color: white !important
     .P2{
         width: 100% !important;
     }
+    .cardsecondcard{
+        width: 268px;
+        top: 423px;
+        left: 8px;
+    
+    }
     .lastcard{
         width: 255px !important;
         position: relative;
@@ -97,8 +103,8 @@ color: white !important
         top: 42px;
    }
     .dodo2{
-     top: -198px !important;
-     left: 2% !important;
+        top: 80px !important;
+    left: 13% !important;
      }
     .bigcard1{
         top: -336px !important;
@@ -238,7 +244,10 @@ color: white !important
 
 @media (min-width:411px) and (max-width:767px)
 {  
-    
+    #firstmargin{
+        position: relative;
+        top: 20%;
+    }
     
     .lastcard{
     width: 321px !important;
@@ -265,9 +274,13 @@ color: white !important
     margin: 10px;
     border-radius: 15px;
 }
-
+    .playsecond{
+        position: relative;
+        top: 79px;
+    }
     .cardsecondcard{
-        top: 404px !important;
+        top: 366px !important;
+        width: 393px !important;
     }
     .cardthird{
         top: 332px !important;
@@ -308,7 +321,7 @@ color: white !important
         position: absolute;
         width:8rem;
         height: 8rem;
-        top: 2558px;
+        top: 453px;
         left: 150px !important;
     }
      .card1{
@@ -324,7 +337,7 @@ color: white !important
         display: none;
     }
     .card2{
-        top: 426%;
+        top: 431% !important;
     }
 
     .dab3
