@@ -98,10 +98,7 @@ color: white !important
     .cardcat1{
         width: 300px !important;
     }
-    #cardcat{
-        position: relative;
-        top: 42px;
-   }
+   
     .dodo2{
         top: 80px !important;
     left: 13% !important;
@@ -244,9 +241,9 @@ color: white !important
 
 @media (min-width:411px) and (max-width:767px)
 {  
-   
+    
     .imgfirst{
-        width: 72% !important;
+        width: 100% !important;
     }
     #lastcardfirst{
         top: 92px;
