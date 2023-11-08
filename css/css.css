@@ -860,4 +860,8 @@
 .noanimation:hover {
   animation: none !important;
   cursor: pointer;
+}
+
+.fa-fade:hover, .fa-shake:hover, .fa-beat:hover, .fa-spin:hover {
+  animation: none;
 }/*# sourceMappingURL=css.css.map */
