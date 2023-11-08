@@ -595,7 +595,18 @@
     position: relative;
     left: 128px !important;
   }
+  .thirdcardplay {
+    width: 400px !important;
+    position: relative;
+    left: 128px !important;
+  }
   .dodofirst {
+    left: -12% !important;
+    top: 178px !important;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .dodothird {
     left: -12% !important;
     top: 178px !important;
     height: -moz-max-content;

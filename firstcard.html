@@ -38,10 +38,10 @@
             </nav>
     </div>
    <div class="z-3 mt-5" style="height: 300px; background-color: rgb(252, 247, 238);">
-    <div class="card cardfirstcard p-5 rounded-4 shadow-lg position-relative" data-tilt style="width: 600px;height: 600px;z-index: 1;top: 20px; left: 200px ;">
+    <div class="card cardfirstcard p-5 rounded-4 hidden shadow-lg position-relative" data-tilt style="width: 600px;height: 600px;z-index: 1;top: 20px; left: 200px ;">
         <div class="row">
             <div class="rounded-3 p-0 border border-5 border-secondary-subtle" style="width: max-content;">
-                <img src="img/card2.png" class="rounded-3" alt="">
+                <img src="img/card2.png" class="rounded-3 fa-flip" alt="">
             </div>
             <div class="col align-self-center">Kipon
                 Casual - Free</div>
@@ -53,16 +53,16 @@
    <div class="row bigcard1 position-relative" style="width: 120%;height: 500px;background-size: 100%;background-repeat: no-repeat; left: -30px;background-image: url(img/bigcard.png);">
    </div>
    <div class="container" id="containerscreen">
-  <div class="row nofont  fs-1 text-primary-emphasis my-lg-5 justify-content-center mb-3">Screenshots</div>
+  <div class="row nofont  fs-1 text-primary-emphasis my-lg-5 justify-content-center mb-3 fa-fade">Screenshots</div>
    
   <div class="row" id="cardcat">
     <div class="col d-flex justify-content-center mt-4">
-               <div class="card cardcat1 bg-transparent border-0 overflow-hidden  rounded-3" data-tilt style="width: 380px;height: 300px;">
+               <div class="card cardcat1 hidden bg-transparent border-0 overflow-hidden  rounded-3" data-tilt style="width: 380px;height: 300px;">
                     <img src="img/cardsmaill1.png" class="c1 w-100" alt="">
                </div>
 </div>
     <div class="col d-flex justify-content-center mt-4">
-        <div class="card cardcat1 bg-transparent border-0 overflow-hidden  rounded-3" data-tilt style="width: 380px;height: 300px;">
+        <div class="card cardcat1 hidden bg-transparent border-0 overflow-hidden  rounded-3" data-tilt style="width: 380px;height: 300px;">
             <img src="img/smallcard.png" class="c1 w-100"  alt="">
           </div>
     </div>
@@ -76,25 +76,25 @@
 </div>
  <div class="row mt-5">
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4">
-        <div class="row nofont fs-5">
+        <div class="row nofont fs-5 textbigfirst hidden">
             “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
         </div>
-        <div class="row fs-4 my-4 ">Wang Wai</div>
+        <div class="row fs-4 my-4 textfirst hidden ">Wang Wai</div>
     </div>
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4 ">
-    <div class="row nofont fs-5">
+    <div class="row nofont fs-5 textbigfirst hidden">
        
 “I'm a testimonial. Click to edit me and add text that says something
  nice about you and your services. Let your customers review you and tell their friends how great you are.”
     </div>
-    <div class="row fs-4 my-4">Jose Pablo</div>
+    <div class="row fs-4 my-4 textfirst hidden">Jose Pablo</div>
 </div>
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4">
-        <div class="row nofont fs-5">
+        <div class="row nofont fs-5 textbigfirst hidden">
            
 “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
         </div>
-        <div class="row fs-4 my-4 ">Priya Gunga</div>
+        <div class="row fs-4 my-4 textfirst hidden ">Priya Gunga</div>
     </div>
  </div>
     </div>
@@ -107,9 +107,9 @@
     </div>  
     </div>
   <div class="row justify-content-center my-5 w-100">
-  <div class="card shadow-sm text-center firstcardplay p-4 rounded-5"style="width: 700px;" id="lastcardfirst">
+  <div class="card shadow-sm text-center firstcardplay p-4 fa-fade rounded-5"style="width: 700px;" id="lastcardfirst">
     <div class="row my-3">
-        <h1>
+        <h1 class="fa-shake">
         Play Now</h1>
     </div>
     <div class="row">
@@ -169,6 +169,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
+    $(".cardfirstcard").show(2000)
        $(window).on("scroll",()=>{
         $(".bigcard1").animate({
            left:"10px"
@@ -181,9 +182,20 @@
         },1000)
         $(".bigcard2").animate({
            left:"10px"
-        },1000)
-   }) 
+        },1000) 
+        if (scrollY>300) {
+    $(".cardcat1").fadeIn(1000)
+        
+    }
+    if (scrollY>968) {
 
+    $(".textbigfirst").show(2000)
+    $(".textfirst").show(1200)
+
+    }
+
+   }) 
+   
   $(".games-ul").mousedown(()=>{$(".games-items").fadeIn(1000)} )
           setInterval(()=>{ console.log("first")
  

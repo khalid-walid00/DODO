@@ -38,10 +38,10 @@
             </nav>
     </div>
    <div class="z-3 mt-5" style="height: 300px; background-color: rgb(252, 247, 238);">
-    <div class="card p-5 cardthird rounded-4 shadow-lg position-relative" style="width: 600px;height: 600px;z-index: 1;top: 20px; left: 200px ;">
+    <div class="card p-5 cardthird rounded-4 shadow-lg position-relative hidden" data-tilt style="width: 600px;height: 600px;z-index: 1;top: 20px; left: 200px ;">
         <div class="row">
             <div class="rounded-3 p-0 border border-5 border-secondary-subtle" style="width: max-content;">
-                <img src="img/sor.png" class="rounded-3" alt="">
+                <img src="img/sor.png" class="rounded-3 fa-flip" alt="">
             </div>
             <div class="col align-self-center fs-5">Treasure Box <br><span class="nofont fs-6">Adventure - Free</span> </div>
         </div>
@@ -54,48 +54,48 @@
    <div class="row bigcard1 position-relative" style="width: 120%;height: 500px;background-size: 100%100%;background-repeat: no-repeat; left: -30px;background-image: url(img/island.png);">
    </div>
    <div class="container" id="containerscreen">
-  <div class="row nofont  fs-1 text-primary-emphasis my-lg-5 justify-content-center mb-3">Screenshots</div>
+  <div class="row nofont  fs-1 text-primary-emphasis my-lg-5 justify-content-center mb-3 fa-shake">Screenshots</div>
    
   <div class="row">
     <div class="col d-flex justify-content-center mt-4">
-               <div class="card bg-transparent border-0 overflow-hidden  rounded-3" style="width: 500px;height: 300px;">
-                    <img src="img/canz1.png" class="c1 w-100"  alt="">
+               <div class="card bg-transparent border-0 overflow-hidden hidden carddd rounded-3" style="width: 500px;height: 300px;">
+                    <img src="img/canz1.png" class="c1 w-100" data-tilt  alt="">
                </div>
 </div>
     <div class="col d-flex justify-content-center mt-4">
-        <div class="card bg-transparent border-0 overflow-hidden  rounded-3" style="width: 500px;height: 300px;">
-            <img src="img/canz2.png" class="c1 w-100"  alt="">
+        <div class="card bg-transparent border-0 overflow-hidden hidden carddd rounded-3"  style="width: 500px;height: 300px;">
+            <img src="img/canz2.png" class="c1 w-100" data-tilt alt="">
           </div>
     </div>
   </div>
  <div class="row ">
  <div class="col-2 rounded-5 bg-danger-subtle shadow-lg p-4 mt-5" style="width: max-content;">
-    <div class="rounded-5 d-flex p-1 bg-danger ps-3  align-items-center"><i class="fa-solid fa-star" style="color: #ffffff;"></i>
+    <div class="rounded-5 d-flex p-1 bg-danger ps-3  align-items-center"><i class="fa-solid fa-star fa-spin" style="color: #ffffff;"></i>
 <div class="rounded-5 bg-white p-3">4.1 Rating</div></div>
  </div>
  <div class="col fs-1 text-primary-emphasis align-self-center pt-4 ms-5">Reviews</div>
 </div>
  <div class="row mt-5">
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4">
-        <div class="row nofont fs-5">
+        <div class="row nofont fs-5 textmostbig hidden">
             “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
         </div>
-        <div class="row fs-4 my-4 ">Wang Wai</div>
+        <div class="row fs-4 my-4 textmost hidden ">Wang Wai</div>
     </div>
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4 ">
-    <div class="row nofont fs-5">
+    <div class="row nofont fs-5 textmostbig hidden">
        
 “I'm a testimonial. Click to edit me and add text that says something
  nice about you and your services. Let your customers review you and tell their friends how great you are.”
     </div>
-    <div class="row fs-4 my-4">Jose Pablo</div>
+    <div class="row fs-4 my-4 textmost hidden">Jose Pablo</div>
 </div>
     <div class="col-lg col-sm-12 mb-5 border border-2 border-dark p-4">
-        <div class="row nofont fs-5">
+        <div class="row nofont fs-5 textmostbig hidden">
            
 “I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
         </div>
-        <div class="row fs-4 my-4 ">Priya Gunga</div>
+        <div class="row fs-4 my-4  textmost hidden">Priya Gunga</div>
     </div>
  </div>
     </div>
@@ -108,16 +108,16 @@
     </div>  
     </div>
   <div class="row justify-content-center my-5">
-  <div class="card shadow-sm text-center p-4 rounded-5 play3"style="width: 700px;">
+  <div class="card shadow-sm text-center p-4 rounded-5 play3 thirdcardplay fa-fade"style="width: 700px;">
     <div class="row my-3">
-        <h1>
+        <h1 class="fa-shake">
         Play Now</h1>
     </div>
     <div class="row">
     <div class="col"><img src="img/Apple Store.png" class="w-75"></div>
     <div class="col"><img src="img/Google Play.png" class="w-75"></div>
     </div>
-  </div>    <div class="bg-orange rounded-bottom-3 shadow-sm fs-2 fst-italic p-3 dodo3 pb-1 position-relative" style="width: max-content;left: 28%;top: 92px;">DoDo Games</div>
+  </div>    <div class="bg-orange rounded-bottom-3 shadow-sm fs-2 fst-italic p-3 dodo3 dodothird pb-1 position-relative" style="width: max-content;left: 28%;top: 92px;">DoDo Games</div>
 
   </div>
 
@@ -170,6 +170,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
+        $(".cardthird").show(2000)
        $(window).on("scroll",()=>{
         $(".bigcard1").animate({
            left:"10px"
@@ -183,6 +184,13 @@
         $(".bigcard2").animate({
            left:"10px"
         },1000)
+        if (scrollY>440) {
+            $(".carddd").fadeIn(1000)
+        }
+        if (scrollY>920) {
+            $(".textmostbig").show(2000)
+            $(".textmost").show(1500)
+        }
    })
   $(".games-ul").mousedown(()=>{$(".games-items").fadeIn(1000)} )
         setInterval(()=>{ console.log("first")
