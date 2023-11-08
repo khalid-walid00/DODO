@@ -652,7 +652,16 @@ transform: rotate(180deg);
 }
 @media  (min-width:1023px) and (max-width:4000px)
 {
- 
+      .firstcardplay{
+        width: 400px !important;
+        position: relative;
+        left: 128px !important;
+      }
+      .dodofirst{
+        left: -12% !important;
+        top: 178px !important;
+        height: max-content;
+      }
     .cardsecond{
         position: absolute;
         top:95px;
